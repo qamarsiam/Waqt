@@ -1,0 +1,3177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Chronos Atelier — Where Time Becomes Art</title>
+
+    <!-- ============================================================
+     01. EXTERNAL LIBRARIES
+     ============================================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Inter:wght@300;400&family=Space+Grotesk:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+
+    <!-- ============================================================
+     02. TAILWIND PREFLIGHT (precompiled — do not edit)
+     ============================================================ -->
+    <style>
+      *,
+      :after,
+      :before {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgba(59, 130, 246, 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      }
+      ::backdrop {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgba(59, 130, 246, 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style: ;
+      } /*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/
+      *,
+      :after,
+      :before {
+        box-sizing: border-box;
+        border: 0 solid #e5e7eb;
+      }
+      :after,
+      :before {
+        --tw-content: "";
+      }
+      :host,
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        -o-tab-size: 4;
+        tab-size: 4;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          sans-serif,
+          Apple Color Emoji,
+          Segoe UI Emoji,
+          Segoe UI Symbol,
+          Noto Color Emoji;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        margin: 0;
+        line-height: inherit;
+      }
+      hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px;
+      }
+      abbr:where([title]) {
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      b,
+      strong {
+        font-weight: bolder;
+      }
+      code,
+      kbd,
+      pre,
+      samp {
+        font-family:
+          ui-monospace,
+          SFMono-Regular,
+          Menlo,
+          Monaco,
+          Consolas,
+          Liberation Mono,
+          Courier New,
+          monospace;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        font-size: 1em;
+      }
+      small {
+        font-size: 80%;
+      }
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+      }
+      sub {
+        bottom: -0.25em;
+      }
+      sup {
+        top: -0.5em;
+      }
+      table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-variation-settings: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      input:where([type="button"]),
+      input:where([type="reset"]),
+      input:where([type="submit"]) {
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none;
+      }
+      :-moz-focusring {
+        outline: auto;
+      }
+      :-moz-ui-invalid {
+        box-shadow: none;
+      }
+      progress {
+        vertical-align: baseline;
+      }
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+      [type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+      summary {
+        display: list-item;
+      }
+      blockquote,
+      dd,
+      dl,
+      figure,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      hr,
+      p,
+      pre {
+        margin: 0;
+      }
+      fieldset {
+        margin: 0;
+      }
+      fieldset,
+      legend {
+        padding: 0;
+      }
+      menu,
+      ol,
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      dialog {
+        padding: 0;
+      }
+      textarea {
+        resize: vertical;
+      }
+      input::-moz-placeholder,
+      textarea::-moz-placeholder {
+        opacity: 1;
+        color: #9ca3af;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        opacity: 1;
+        color: #9ca3af;
+      }
+      [role="button"],
+      button {
+        cursor: pointer;
+      }
+      :disabled {
+        cursor: default;
+      }
+      audio,
+      canvas,
+      embed,
+      iframe,
+      img,
+      object,
+      svg,
+      video {
+        display: block;
+        vertical-align: middle;
+      }
+      img,
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+      [hidden]:where(:not([hidden="until-found"])) {
+        display: none;
+      }
+      .fixed {
+        position: fixed;
+      }
+      .absolute {
+        position: absolute;
+      }
+      .relative {
+        position: relative;
+      }
+      .sticky {
+        position: sticky;
+      }
+      .inset-0 {
+        inset: 0;
+      }
+      .bottom-8 {
+        bottom: 2rem;
+      }
+      .left-1\/2 {
+        left: 50%;
+      }
+      .top-0 {
+        top: 0;
+      }
+      .top-\[15vh\] {
+        top: 15vh;
+      }
+      .z-10 {
+        z-index: 10;
+      }
+      .z-40 {
+        z-index: 40;
+      }
+      .order-1 {
+        order: 1;
+      }
+      .order-2 {
+        order: 2;
+      }
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+      }
+      .my-3 {
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+      }
+      .mb-10 {
+        margin-bottom: 2.5rem;
+      }
+      .mb-16 {
+        margin-bottom: 4rem;
+      }
+      .mb-2 {
+        margin-bottom: 0.5rem;
+      }
+      .mb-3 {
+        margin-bottom: 0.75rem;
+      }
+      .mb-4 {
+        margin-bottom: 1rem;
+      }
+      .mb-40 {
+        margin-bottom: 10rem;
+      }
+      .mb-6 {
+        margin-bottom: 1.5rem;
+      }
+      .mb-8 {
+        margin-bottom: 2rem;
+      }
+      .mb-\[40vh\] {
+        margin-bottom: 40vh;
+      }
+      .block {
+        display: block;
+      }
+      .inline-block {
+        display: inline-block;
+      }
+      .flex {
+        display: flex;
+      }
+      .grid {
+        display: grid;
+      }
+      .hidden {
+        display: none;
+      }
+      .h-14 {
+        height: 3.5rem;
+      }
+      .h-4 {
+        height: 1rem;
+      }
+      .h-\[300px\] {
+        height: 300px;
+      }
+      .h-\[420px\] {
+        height: 420px;
+      }
+      .h-\[70vh\] {
+        height: 70vh;
+      }
+      .h-full {
+        height: 100%;
+      }
+      .h-screen {
+        height: 100vh;
+      }
+      .w-\[280px\] {
+        width: 280px;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .w-px {
+        width: 1px;
+      }
+      .max-w-3xl {
+        max-width: 48rem;
+      }
+      .max-w-4xl {
+        max-width: 56rem;
+      }
+      .max-w-6xl {
+        max-width: 72rem;
+      }
+      .max-w-md {
+        max-width: 28rem;
+      }
+      .max-w-sm {
+        max-width: 24rem;
+      }
+      .flex-none {
+        flex: none;
+      }
+      .-translate-x-1\/2 {
+        --tw-translate-x: -50%;
+      }
+      .-translate-x-1\/2,
+      .scale-110 {
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+          rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+          skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+          scaleY(var(--tw-scale-y));
+      }
+      .scale-110 {
+        --tw-scale-x: 1.1;
+        --tw-scale-y: 1.1;
+      }
+      .grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .items-end {
+        align-items: flex-end;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .gap-10 {
+        gap: 2.5rem;
+      }
+      .gap-12 {
+        gap: 3rem;
+      }
+      .gap-14 {
+        gap: 3.5rem;
+      }
+      .gap-16 {
+        gap: 4rem;
+      }
+      .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(2rem * (1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+      }
+      .overflow-hidden {
+        overflow: hidden;
+      }
+      .border-t {
+        border-top-width: 1px;
+      }
+      .bg-\[var\(--gold\)\] {
+        background-color: var(--gold);
+      }
+      .object-cover {
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+      .p-8 {
+        padding: 2rem;
+      }
+      .px-8 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .py-32 {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+      }
+      .py-40 {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+      }
+      .py-6 {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+      .pb-10 {
+        padding-bottom: 2.5rem;
+      }
+      .pb-24 {
+        padding-bottom: 2rem;
+      }
+      .pt-24 {
+        padding-top: 6rem;
+      }
+      .pt-8 {
+        padding-top: 2rem;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .\!text-\[10px\] {
+        font-size: 10px !important;
+      }
+      .\!text-\[11px\] {
+        font-size: 11px !important;
+      }
+      .text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .text-3xl {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      .text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+      .text-5xl {
+        font-size: 3rem;
+        line-height: 1;
+      }
+      .text-6xl {
+        font-size: 3.75rem;
+        line-height: 1;
+      }
+      .text-7xl {
+        font-size: 4.5rem;
+        line-height: 1;
+      }
+      .text-sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      .text-xs {
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+      .leading-\[0\.95\] {
+        line-height: 0.95;
+      }
+      .leading-snug {
+        line-height: 1.375;
+      }
+      .leading-tight {
+        line-height: 1.25;
+      }
+      .tracking-\[0\.25em\] {
+        letter-spacing: 0.25em;
+      }
+      .opacity-0 {
+        opacity: 0;
+      }
+      .mix-blend-difference {
+        mix-blend-mode: difference;
+      }
+      .filter {
+        filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+          var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+          var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+      }
+      @media (min-width: 768px) {
+        .md\:order-1 {
+          order: 1;
+        }
+        .md\:order-2 {
+          order: 2;
+        }
+        .md\:col-span-1 {
+          grid-column: span 1 / span 1;
+        }
+        .md\:flex {
+          display: flex;
+        }
+        .md\:w-\[340px\] {
+          width: 340px;
+        }
+        .md\:grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .md\:grid-cols-4 {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+        .md\:grid-cols-5 {
+          grid-template-columns: repeat(5, minmax(0, 1fr));
+        }
+        .md\:flex-row {
+          flex-direction: row;
+        }
+        .md\:px-16 {
+          padding-left: 4rem;
+          padding-right: 4rem;
+        }
+        .md\:text-5xl {
+          font-size: 3rem;
+          line-height: 1;
+        }
+        .md\:text-6xl {
+          font-size: 3.75rem;
+          line-height: 1;
+        }
+        .md\:text-7xl {
+          font-size: 4.5rem;
+          line-height: 1;
+        }
+        .md\:text-8xl {
+          font-size: 6rem;
+          line-height: 1;
+        }
+        .md\:text-base {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+      @media (min-width: 1024px) {
+        .lg\:text-\[7\.5rem\] {
+          font-size: 7.5rem;
+        }
+      }
+    </style>
+
+    <!-- ============================================================
+     03. CUSTOM STYLES — QUIET HERITAGE PALETTE
+     ============================================================ -->
+    <style>
+      :root {
+        --obsidian: #0b0a08; /* deep warm-black */
+        --charcoal: #15130f; /* warm charcoal for alternating sections */
+        --ivory: #f2ede4; /* warm ivory — primary text */
+        --stone: #b8b2a6; /* muted greige — secondary text */
+        --platinum: #e2dccf; /* platinum warm — tertiary text */
+        --gold: #c9a962; /* champagne gold — accent */
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        background: var(--obsidian);
+        color: var(--ivory);
+        margin: 0;
+        overflow-x: hidden;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        line-height: 1.7;
+      }
+
+      .serif {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+        letter-spacing: -0.02em;
+      }
+
+      .label {
+        font-family: "Space Grotesk", sans-serif;
+        letter-spacing: 0.2em;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-weight: inherit;
+      }
+
+      .btn {
+        font-family: "Space Grotesk", sans-serif;
+        letter-spacing: 0.15em;
+        font-size: 12px;
+        text-transform: uppercase;
+        border: 1px solid var(--gold);
+        padding: 16px 36px;
+        color: var(--ivory);
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        transition: color 0.3s ease 0.15s;
+        background: transparent;
+        cursor: pointer;
+      }
+      .btn::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--gold);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s ease;
+        z-index: 0;
+        will-change: transform;
+      }
+      .btn:hover {
+        color: var(--obsidian);
+      }
+      .btn:hover::before {
+        transform: scaleX(1);
+      }
+      .btn span {
+        position: relative;
+        z-index: 1;
+      }
+      .btn:disabled {
+        opacity: 0.55;
+        cursor: default;
+      }
+      .btn:disabled:hover {
+        color: var(--ivory);
+      }
+      .btn:disabled:hover::before {
+        transform: scaleX(0);
+      }
+
+      .gold-line {
+        width: 0;
+        height: 1px;
+        background: var(--gold);
+      }
+
+      a.underline-link {
+        position: relative;
+        color: var(--gold);
+        text-decoration: none;
+        font-family: "Space Grotesk", sans-serif;
+        letter-spacing: 0.1em;
+        font-size: 12px;
+        text-transform: uppercase;
+        display: inline-block;
+      }
+      a.underline-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 1px;
+        background: var(--gold);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+      a.underline-link:hover::after {
+        transform: scaleX(1);
+      }
+
+      .btn:focus-visible,
+      .underline-link:focus-visible,
+      input:focus-visible,
+      textarea:focus-visible,
+      select:focus-visible {
+        outline: 1px solid var(--gold);
+        outline-offset: 3px;
+      }
+
+      .skip-link {
+        position: fixed;
+        top: -100px;
+        left: 16px;
+        z-index: 60;
+        background: var(--gold);
+        color: var(--obsidian);
+        padding: 12px 20px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: top 0.2s ease;
+      }
+      .skip-link:focus {
+        top: calc(16px + env(safe-area-inset-top, 0px));
+      }
+
+      .grain {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.025;
+        z-index: 20;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      }
+
+      .watch-card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(201, 169, 98, 0.22);
+        background: linear-gradient(
+          180deg,
+          rgba(201, 169, 98, 0.05) 0%,
+          rgba(201, 169, 98, 0.01) 60%,
+          transparent 100%
+        );
+        transition:
+          border-color 0.4s ease,
+          transform 0.4s ease,
+          box-shadow 0.4s ease;
+        height: 100%;
+      }
+      .watch-card:hover {
+        border-color: rgba(201, 169, 98, 0.55);
+        transform: translateY(-4px);
+      }
+
+      .watch-card__media {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        max-height: 42vh;
+        overflow: hidden;
+        background: #0f0e0b;
+        flex: 0 0 auto;
+      }
+      .watch-card__media img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 1.2s cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+      .watch-card:hover .watch-card__media img,
+      .watch-card.is-focused .watch-card__media img {
+        transform: scale(1.05);
+      }
+
+      .watch-card__body {
+        padding: 22px 22px 0;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .watch-card__name {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 1.15;
+        letter-spacing: -0.01em;
+        color: var(--ivory);
+        margin: 0 0 10px;
+      }
+      .watch-card__specs {
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        line-height: 1.75;
+        letter-spacing: 0.06em;
+        color: var(--stone);
+        margin: 0 0 16px;
+        text-transform: uppercase;
+      }
+      .watch-card__price {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 20px;
+        color: var(--gold);
+        margin: 0 0 18px;
+        letter-spacing: 0.01em;
+      }
+
+      .watch-card__footer {
+        padding: 0 22px 22px;
+        margin-top: auto;
+      }
+      .watch-card__cta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        min-height: 44px;
+        padding: 14px 16px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--ivory);
+        background: transparent;
+        border: 1px solid rgba(201, 169, 98, 0.55);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: color 0.35s ease;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .watch-card__cta::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--gold);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+        z-index: 0;
+      }
+      .watch-card__cta:hover,
+      .watch-card__cta:focus-visible,
+      .watch-card.is-focused .watch-card__cta {
+        color: var(--obsidian);
+      }
+      .watch-card__cta:hover::before,
+      .watch-card__cta:focus-visible::before,
+      .watch-card.is-focused .watch-card__cta::before {
+        transform: scaleX(1);
+      }
+      .watch-card__cta:focus-visible {
+        outline: 1px solid var(--gold);
+        outline-offset: 2px;
+      }
+      .watch-card__cta > span,
+      .watch-card__cta > svg {
+        position: relative;
+        z-index: 1;
+      }
+
+      .watch-card__badge {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        padding: 5px 10px;
+        background: rgba(11, 10, 8, 0.85);
+        border: 1px solid rgba(201, 169, 98, 0.5);
+        color: var(--gold);
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 10px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+      }
+
+      .watch-card.is-focused {
+        border-color: rgba(201, 169, 98, 0.85);
+        transform: translateY(-6px);
+        box-shadow:
+          0 20px 40px rgba(0, 0, 0, 0.5),
+          0 0 0 1px rgba(201, 169, 98, 0.35) inset;
+      }
+
+      .hcard-track {
+        display: flex;
+        gap: 28px;
+        will-change: transform;
+        align-items: stretch;
+      }
+      @media (min-width: 768px) {
+        .hcard-track {
+          gap: 32px;
+        }
+      }
+
+      input,
+      textarea,
+      select {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(184, 178, 166, 0.4);
+        color: var(--ivory);
+        font-family: "Inter", sans-serif;
+        padding: 10px 0;
+        width: 100%;
+        outline: none;
+        transition: border-color 0.3s;
+      }
+      input:focus,
+      textarea:focus,
+      select:focus {
+        border-color: var(--gold);
+      }
+      ::placeholder {
+        color: var(--stone);
+      }
+
+      .field-label {
+        display: block;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--stone);
+        margin-bottom: 8px;
+      }
+
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23C9A962' stroke-width='1.4'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 4px center;
+        padding-right: 24px;
+      }
+      select option {
+        background: #15130f;
+        color: var(--ivory);
+      }
+      select:invalid {
+        color: var(--stone);
+      }
+
+      .form-status {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        padding: 14px 16px;
+        border: 1px solid rgba(201, 169, 98, 0.4);
+        display: none;
+      }
+      .form-status.is-visible {
+        display: block;
+      }
+      .form-status[data-state="success"] {
+        color: var(--gold);
+        border-color: var(--gold);
+      }
+      .form-status[data-state="error"] {
+        color: #e08a7d;
+        border-color: #e08a7d;
+      }
+
+      html:not(.gsap-ready) .opacity-0 {
+        opacity: 1 !important;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .scroll-dot {
+          animation: none !important;
+        }
+        .watch-card,
+        .watch-card__media img,
+        .watch-card__cta::before {
+          transition: none !important;
+        }
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .hcard-wrap {
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .site-nav {
+        transition:
+          background-color 0.5s ease,
+          border-color 0.5s ease,
+          backdrop-filter 0.5s ease;
+        border-bottom: 1px solid transparent;
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+       /* No full-width bar. Just a subtle border to keep the nav readable
+       when it scrolls over content. */
+      .site-nav.is-scrolled {
+        background: transparent;
+        border-bottom-color: transparent;
+      }
+
+      .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--ivory);
+        font-size: 1.1rem;
+        letter-spacing: 0.02em;
+      }
+      .nav-logo-icon {
+        color: var(--gold);
+        flex: none;
+      }
+      .nav-logo-sub {
+        font-size: 11px !important;
+        color: var(--stone) !important;
+        letter-spacing: 0.22em !important;
+      }
+
+      .nav-pill {
+        display: none;
+        align-items: center;
+        gap: 2px;
+        padding: 6px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+      }
+      @media (min-width: 1024px) {
+        .nav-pill {
+          display: flex;
+        }
+      }
+      .nav-pill-link {
+        position: relative;
+        display: inline-block;
+        padding: 11px 22px;
+        border-radius: 999px;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--platinum);
+        transition:
+          color 0.3s ease,
+          background-color 0.3s ease,
+          box-shadow 0.3s ease;
+        white-space: nowrap;
+      }
+      .nav-pill-link:hover {
+        color: var(--ivory);
+        background: rgba(0, 0, 0, 0.25);
+      }
+      .nav-pill-link.is-active {
+        color: var(--gold);
+        background: rgba(0, 0, 0, 0.35);
+        box-shadow:
+          inset 0 0 0 1px rgba(201, 169, 98, 0.18),
+          inset 0 1px 2px rgba(0, 0, 0, 0.3);
+      }
+      .nav-pill-link:focus-visible,
+      .nav-icon-btn:focus-visible,
+      .nav-burger:focus-visible {
+        outline: 1px solid var(--gold);
+        outline-offset: 2px;
+        border-radius: 999px;
+      }
+
+      .nav-icon-btn {
+        position: relative;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        border: 1px solid rgba(226, 220, 207, 0.25);
+        color: var(--platinum);
+        text-decoration: none;
+        transition:
+          border-color 0.3s ease,
+          color 0.3s ease,
+          background-color 0.3s ease;
+      }
+      .nav-icon-btn:hover {
+        color: var(--gold);
+        border-color: var(--gold);
+        background: rgba(201, 169, 98, 0.08);
+      }
+      .cart-badge {
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        min-width: 15px;
+        height: 15px;
+        padding: 0 3px;
+        border-radius: 999px;
+        background: var(--gold);
+        color: var(--obsidian);
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 9px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .cart-badge[data-count="0"] {
+        display: none;
+      }
+
+      .nav-account-btn {
+        display: none;
+      }
+      @media (min-width: 480px) {
+        .nav-account-btn {
+          display: flex;
+        }
+      }
+
+      .nav-burger {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        background: transparent;
+        border: 1px solid rgba(226, 220, 207, 0.25);
+        border-radius: 999px;
+        cursor: pointer;
+      }
+      @media (min-width: 1024px) {
+        .nav-burger {
+          display: none;
+        }
+      }
+      .nav-burger span {
+        width: 14px;
+        height: 1px;
+        background: var(--ivory);
+        transition:
+          transform 0.3s ease,
+          opacity 0.3s ease;
+      }
+      .nav-burger[aria-expanded="true"] span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+      }
+      .nav-burger[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+      }
+      .nav-burger[aria-expanded="true"] span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+
+      .mobile-menu {
+        position: fixed;
+        inset: 0;
+        z-index: 39;
+        background: rgba(11, 10, 8, 0.98);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 32px;
+        padding-top: calc(32px + env(safe-area-inset-top, 0px));
+        padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px));
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition:
+          opacity 0.35s ease,
+          transform 0.35s ease;
+      }
+      .mobile-menu.is-open {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+      .mobile-menu-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+      }
+      .mobile-menu-links a {
+        font-size: 2rem;
+        color: var(--ivory);
+        text-decoration: none;
+        letter-spacing: -0.01em;
+        transition: color 0.25s ease;
+      }
+      .mobile-menu-links a:hover,
+      .mobile-menu-links a.is-active {
+        color: var(--gold);
+      }
+      .mobile-menu-footer {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (min-width: 1024px) {
+        .mobile-menu {
+          display: none;
+        }
+      }
+
+      section[id]:not(#hero) {
+        scroll-margin-top: 90px;
+      }
+
+      .craft-block {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        background: var(--obsidian);
+      }
+      .craft-inner {
+        width: 100%;
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+      @media (min-width: 768px) {
+        .craft-inner {
+          padding: 0 4rem;
+        }
+      }
+      .craft-img,
+      .craft-text > * {
+        will-change: transform, opacity;
+      }
+
+      .sig-stage {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--obsidian);
+      }
+      .sig-stage__inner {
+        width: 100%;
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 48px;
+        align-items: center;
+      }
+      @media (min-width: 900px) {
+        .sig-stage__inner {
+          grid-template-columns: 1fr 1fr;
+          gap: 80px;
+          padding: 0 4rem;
+        }
+      }
+
+      .sig-media {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+        background: #0f0e0b;
+      }
+      .sig-media img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        will-change: transform, opacity;
+      }
+
+      .sig-text {
+        position: relative;
+        height: var(--sig-frame-h, 320px);
+        overflow: hidden;
+        mask-image: linear-gradient(
+          to bottom,
+          transparent 0%,
+          #000 22%,
+          #000 78%,
+          transparent 100%
+        );
+        -webkit-mask-image: linear-gradient(
+          to bottom,
+          transparent 0%,
+          #000 22%,
+          #000 78%,
+          transparent 100%
+        );
+      }
+
+      .sig-roll {
+        display: flex;
+        flex-direction: column;
+        gap: var(--sig-gap, 0px);
+        will-change: transform;
+      }
+
+      .sig-step {
+        flex: 0 0 auto;
+        height: var(--sig-frame-h, 320px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .sig-step .label {
+        color: var(--stone);
+      }
+      .sig-step h3 {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+        letter-spacing: -0.01em;
+        margin: 14px 0 14px;
+        color: var(--ivory);
+      }
+      .sig-step p {
+        color: var(--platinum);
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 38ch;
+      }
+
+      .sig-progress {
+        position: absolute;
+        left: 50%;
+        bottom: 36px;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        z-index: 2;
+      }
+      .sig-progress__tick {
+        width: 26px;
+        height: 1px;
+        background: rgba(201, 169, 98, 0.25);
+        transition: background-color 0.4s ease;
+      }
+      .sig-progress__tick.is-active {
+        background: var(--gold);
+      }
+
+      .stats-stage {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--charcoal);
+      }
+      .stats-stage__inner {
+        width: 100%;
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+      @media (min-width: 768px) {
+        .stats-stage__inner {
+          padding: 0 4rem;
+        }
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 40px 24px;
+        text-align: center;
+      }
+      @media (min-width: 768px) {
+        .stats-grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 48px;
+        }
+      }
+
+      .stat-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        will-change: transform, opacity;
+      }
+      .stat-card__num {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;
+        font-size: clamp(3rem, 8vw, 4.5rem);
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: var(--ivory);
+        margin: 0;
+      }
+      .stat-card__rule {
+        width: 48px;
+        height: 1px;
+        background: var(--gold);
+        margin: 14px 0 12px;
+        transform-origin: center center;
+      }
+      .stat-card__label {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+
+      .footer-nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .footer-nav li {
+        margin: 0 0 6px;
+      }
+      .footer-nav a {
+        color: var(--stone);
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.2s ease;
+      }
+      .footer-nav a:hover,
+      .footer-nav a:focus-visible {
+        color: var(--gold);
+      }
+
+      #hero > div.hero-overlay {
+        background: linear-gradient(
+          180deg,
+          rgba(11, 10, 8, 0.55) 0%,
+          rgba(11, 10, 8, 0.7) 40%,
+          rgba(11, 10, 8, 0.95) 100%
+        );
+      }
+
+      .quote-mark {
+        margin-bottom: 24px;
+        line-height: 1;
+      }
+      .quote-text {
+        margin: 0 auto 32px;
+        max-width: 28ch;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <div class="grain" aria-hidden="true"></div>
+
+    <nav
+      id="site-nav"
+      class="site-nav fixed top-0 w-full z-40"
+      aria-label="Site"
+    >
+      <div
+        class="max-w-[1400px] mx-auto flex items-center justify-between px-6 md:px-10 py-5"
+      >
+        <a href="#hero" class="nav-logo shrink-0">
+          <svg
+            class="nav-logo-icon"
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.3"
+            aria-hidden="true"
+          >
+            <path d="M8.5 4h7l.5 2.6H8l.5-2.6Z" stroke-linejoin="round" />
+            <path d="M8.5 20h7l.5-2.6H8l.5 2.6Z" stroke-linejoin="round" />
+            <circle cx="12" cy="12" r="7" />
+            <path
+              d="M12 8.6V12l2.4 1.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="flex flex-col leading-none">
+            <span class="serif" style="font-size: 1.1rem">Chronos</span>
+            <span class="label nav-logo-sub">Atelier</span>
+          </span>
+        </a>
+
+        <div class="nav-pill" role="navigation" aria-label="Primary">
+          <a href="#hero" class="nav-pill-link" data-section="hero">Home</a>
+          <a href="#collection" class="nav-pill-link" data-section="collection"
+            >Collection</a
+          >
+          <a
+            href="#craftsmanship"
+            class="nav-pill-link"
+            data-section="craftsmanship"
+            >Craftsmanship</a
+          >
+          <a href="#signature" class="nav-pill-link" data-section="signature"
+            >Signature</a
+          >
+          <a href="#contact" class="nav-pill-link" data-section="contact"
+            >Contact</a
+          >
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="flex items-center gap-2">
+            <button type="button" class="nav-icon-btn" aria-label="Search">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-3.2-3.2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <a
+              href="#"
+              class="nav-icon-btn nav-account-btn"
+              aria-label="Your account"
+            >
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <circle cx="12" cy="8" r="3.4" />
+                <path
+                  d="M5 20c1.4-3.6 4-5.4 7-5.4s5.6 1.8 7 5.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              id="cart-link"
+              class="nav-icon-btn"
+              aria-label="Cart, 0 items"
+            >
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path d="M6 8h12l-1 12H7L6 8Z" stroke-linejoin="round" />
+                <path d="M9 8V6a3 3 0 0 1 6 0v2" stroke-linecap="round" />
+              </svg>
+              <span class="cart-badge" data-count="0" aria-hidden="true"
+                >0</span
+              >
+            </a>
+            <button
+              id="download-btn"
+              class="underline-link !text-[11px] hidden"
+              type="button"
+            >
+              Download ↓
+            </button>
+          </div>
+
+          <button
+            id="nav-burger"
+            class="nav-burger"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="mobile-menu"
+      class="mobile-menu"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile navigation"
+    >
+      <div class="mobile-menu-links">
+        <a href="#hero" class="serif" data-section="hero">Home</a>
+        <a href="#collection" class="serif" data-section="collection"
+          >Collection</a
+        >
+        <a href="#craftsmanship" class="serif" data-section="craftsmanship"
+          >Craftsmanship</a
+        >
+        <a href="#signature" class="serif" data-section="signature"
+          >Signature</a
+        >
+        <a href="#contact" class="serif" data-section="contact">Contact</a>
+      </div>
+      <div class="mobile-menu-footer">
+        <a href="#contact" class="btn"><span>Book a Viewing</span></a>
+        <div class="flex items-center gap-4 mt-8">
+          <button type="button" class="nav-icon-btn" aria-label="Search">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3.2-3.2" stroke-linecap="round" />
+            </svg>
+          </button>
+          <a href="#" class="nav-icon-btn" aria-label="Your account">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <circle cx="12" cy="8" r="3.4" />
+              <path
+                d="M5 20c1.4-3.6 4-5.4 7-5.4s5.6 1.8 7 5.4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="#" class="nav-icon-btn" aria-label="Cart, 0 items">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+            >
+              <path d="M6 8h12l-1 12H7L6 8Z" stroke-linejoin="round" />
+              <path d="M9 8V6a3 3 0 0 1 6 0v2" stroke-linecap="round" />
+            </svg>
+            <span class="cart-badge" data-count="0" aria-hidden="true">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <!-- 07.1 HERO -->
+      <section
+        class="relative h-screen w-full flex items-end overflow-hidden"
+        id="hero"
+      >
+        <img
+          id="hero-img"
+          src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=1600&auto=format&fit=crop"
+          alt=""
+          class="absolute inset-0 w-full h-full object-cover scale-110"
+          style="filter: brightness(0.55); object-position: center"
+        />
+        <div class="absolute inset-0 hero-overlay"></div>
+
+        <div class="relative z-10 px-8 md:px-16 pb-24 w-full">
+          <p class="hero-label label mb-6 opacity-0">
+            SWISS CRAFTSMANSHIP SINCE 1924
+          </p>
+          <h1
+            class="serif text-5xl sm:text-6xl md:text-8xl lg:text-[7.5rem] leading-[0.95] mb-6 max-w-[90vw]"
+          >
+            <span class="hero-word inline-block opacity-0">Where</span>
+            <span class="hero-word inline-block opacity-0">Time</span
+            ><br class="hidden md:block" />
+            <span class="hero-word inline-block opacity-0">Becomes</span>
+            <span class="hero-word inline-block opacity-0">Art</span>
+          </h1>
+          <p
+            class="hero-sub opacity-0 max-w-md text-sm md:text-base mb-10"
+            style="
+              color: var(--platinum);
+              text-shadow:
+                0 1px 24px rgba(0, 0, 0, 0.95),
+                0 2px 8px rgba(0, 0, 0, 0.8);
+            "
+          >
+            Each timepiece is a testament to generations of horological mastery.
+          </p>
+          <a href="#collection" class="btn hero-cta opacity-0"
+            ><span>Discover the Collection</span></a
+          >
+        </div>
+
+        <div
+          class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 w-px h-14 overflow-hidden"
+          aria-hidden="true"
+        >
+          <div class="scroll-dot w-px h-4 bg-[var(--gold)]"></div>
+        </div>
+      </section>
+
+      <!-- 07.2 PHILOSOPHY -->
+      <section
+        class="py-40 px-8 md:px-16 max-w-4xl mx-auto text-center"
+        aria-labelledby="philosophy-heading"
+      >
+        <h2 id="philosophy-heading" class="label mb-8">Our Philosophy</h2>
+        <p class="serif text-3xl md:text-5xl leading-tight">
+          <span class="phi-line block opacity-0"
+            >We believe a watch is more than</span
+          >
+          <span class="phi-line block opacity-0"
+            >an instrument. It is a companion</span
+          >
+          <span class="phi-line block opacity-0"
+            >through life&rsquo;s most precious moments.</span
+          >
+        </p>
+      </section>
+
+      <!-- 07.3 HORIZONTAL COLLECTION -->
+      <section
+        id="collection"
+        class="relative h-screen overflow-hidden"
+        style="background: var(--charcoal)"
+        aria-labelledby="collection-heading"
+      >
+        <div class="h-full flex flex-col justify-center">
+          <div class="px-8 md:px-16 mb-10">
+            <h2 id="collection-heading" class="label">The Collection</h2>
+          </div>
+          <div class="hcard-wrap">
+            <div class="hcard-track px-8 md:px-16">
+              <!-- cards injected by JS -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07.4 CRAFTSMANSHIP -->
+      <section id="craftsmanship" aria-label="Craftsmanship">
+        <div class="craft-block" data-direction="right">
+          <div class="craft-inner">
+            <div class="grid md:grid-cols-2 gap-14 items-center">
+              <img
+                src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=1200&auto=format&fit=crop"
+                alt="Macro view of a mechanical watch movement"
+                loading="lazy"
+                class="craft-img w-full h-[420px] object-cover"
+              />
+              <div class="craft-text">
+                <p class="label mb-4">The Movement</p>
+                <h2 class="serif text-4xl md:text-5xl mb-6">
+                  Precision in Every Detail
+                </h2>
+                <p
+                  class="text-sm md:text-base mb-8"
+                  style="color: var(--platinum)"
+                >
+                  Our in-house calibre features 287 components, each finished by
+                  hand over 40 hours. The result is a movement that
+                  doesn&rsquo;t just keep time — it defines it.
+                </p>
+                <a href="#" class="underline-link">Explore the Movement →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="craft-block" data-direction="left">
+          <div class="craft-inner">
+            <div class="grid md:grid-cols-2 gap-14 items-center">
+              <div class="craft-text order-2 md:order-1">
+                <p class="label mb-4">The Case</p>
+                <h2 class="serif text-4xl md:text-5xl mb-6">
+                  Sculpted for Perfection
+                </h2>
+                <p
+                  class="text-sm md:text-base mb-8"
+                  style="color: var(--platinum)"
+                >
+                  316L surgical-grade stainless steel, polished to a mirror
+                  finish. Water-resistant to 100m. Designed to be worn, not just
+                  admired.
+                </p>
+                <a href="#" class="underline-link">View Specifications →</a>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?q=80&w=1200&auto=format&fit=crop"
+                alt="Polished stainless steel watch case"
+                loading="lazy"
+                class="craft-img order-1 md:order-2 w-full h-[420px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07.5 STATS -->
+      <section id="stats" class="relative" aria-labelledby="stats-heading">
+        <h2 id="stats-heading" class="sr-only">
+          Chronos Atelier by the numbers
+        </h2>
+        <div class="stats-stage">
+          <div class="stats-stage__inner">
+            <div class="stats-grid">
+              <div class="stat-card" data-stat="1">
+                <p
+                  class="stat-card__num stat"
+                  data-count="100"
+                  aria-hidden="true"
+                >
+                  0
+                </p>
+                <span class="sr-only">100 years of heritage</span>
+                <div class="stat-card__rule"></div>
+                <p class="stat-card__label">Years of Heritage</p>
+              </div>
+
+              <div class="stat-card" data-stat="2">
+                <p
+                  class="stat-card__num stat"
+                  data-count="287"
+                  aria-hidden="true"
+                >
+                  0
+                </p>
+                <span class="sr-only">287 components per movement</span>
+                <div class="stat-card__rule"></div>
+                <p class="stat-card__label">Components / Movement</p>
+              </div>
+
+              <div class="stat-card" data-stat="3">
+                <p
+                  class="stat-card__num stat"
+                  data-count="72"
+                  aria-hidden="true"
+                >
+                  0
+                </p>
+                <span class="sr-only">72 hour power reserve</span>
+                <div class="stat-card__rule"></div>
+                <p class="stat-card__label">Hour Power Reserve</p>
+              </div>
+
+              <div class="stat-card" data-stat="4">
+                <p
+                  class="stat-card__num stat"
+                  data-count="5"
+                  aria-hidden="true"
+                >
+                  0
+                </p>
+                <span class="sr-only">5 year warranty</span>
+                <div class="stat-card__rule"></div>
+                <p class="stat-card__label">Year Warranty</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07.6 SIGNATURE -->
+      <section
+        id="signature"
+        class="relative"
+        aria-labelledby="signature-heading"
+      >
+        <div class="sig-stage">
+          <div class="sig-stage__inner">
+            <div class="sig-media">
+              <img
+                class="sig-img"
+                src="https://images.unsplash.com/photo-1526045431048-f857369baa09?q=80&w=1200&auto=format&fit=crop"
+                alt="Close-up of the signature dial"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="sig-text" aria-label="The Signature">
+              <h2 id="signature-heading" class="sr-only">
+                The Signature Details
+              </h2>
+              <div class="sig-roll">
+                <div class="sig-step" data-step="1">
+                  <p class="label">01 — The Dial</p>
+                  <h3>Hand-applied indices</h3>
+                  <p>
+                    Sunburst finish. Legibility in any light. Every marker set
+                    by hand, one at a time.
+                  </p>
+                </div>
+
+                <div class="sig-step" data-step="2">
+                  <p class="label">02 — The Crown</p>
+                  <h3>Screw-down, signed</h3>
+                  <p>
+                    Engineered for decades of use. Threaded to the micron,
+                    sealed against the elements.
+                  </p>
+                </div>
+
+                <div class="sig-step" data-step="3">
+                  <p class="label">03 — The Strap</p>
+                  <h3>Italian leather</h3>
+                  <p>
+                    Hand-stitched. Softens beautifully with time. Finished with
+                    a signed gold buckle.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sig-progress" aria-hidden="true">
+            <span class="sig-progress__tick" data-tick="1"></span>
+            <span class="sig-progress__tick" data-tick="2"></span>
+            <span class="sig-progress__tick" data-tick="3"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07.7 QUOTE -->
+      <section
+        class="py-40 px-8 text-center max-w-3xl mx-auto"
+        aria-label="Collector quote"
+      >
+        <p
+          class="quote-mark serif text-7xl opacity-0"
+          style="color: var(--gold)"
+          aria-hidden="true"
+        >
+          &ldquo;
+        </p>
+        <blockquote
+          class="quote-text serif text-3xl md:text-5xl leading-snug opacity-0"
+        >
+          A Chronos Atelier watch is not purchased. It is inherited.
+        </blockquote>
+        <p class="quote-attr label opacity-0">
+          — Watch Collector&rsquo;s Journal
+        </p>
+      </section>
+
+      <!-- 07.8 CTA / CONTACT -->
+      <section
+        id="contact"
+        class="py-32 px-8 md:px-16"
+        style="background: var(--charcoal)"
+        aria-labelledby="contact-heading"
+      >
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <p class="label mb-4">Begin Your Journey</p>
+            <h2 id="contact-heading" class="serif text-5xl md:text-6xl mb-6">
+              Own a Piece of Time
+            </h2>
+            <p style="color: var(--platinum)" class="max-w-sm">
+              Schedule a private viewing at our boutique or arrange a virtual
+              consultation.
+            </p>
+          </div>
+
+          <form class="space-y-8" id="contact-form" novalidate>
+            <div class="cta-field">
+              <label class="field-label" for="cta-name">Name</label>
+              <input
+                id="cta-name"
+                name="name"
+                placeholder="Jane Appleseed"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="cta-field">
+              <label class="field-label" for="cta-email">Email</label>
+              <input
+                id="cta-email"
+                name="email"
+                type="email"
+                placeholder="jane@example.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <div class="cta-field">
+              <label class="field-label" for="cta-model">Preferred Model</label>
+              <select id="cta-model" name="model" required>
+                <option value="" disabled selected>Select a model</option>
+                <option>Heritage Automatic</option>
+                <option>Signature Collection</option>
+                <option>Limited Edition</option>
+              </select>
+            </div>
+            <div class="cta-field">
+              <label class="field-label" for="cta-message">Message</label>
+              <textarea
+                id="cta-message"
+                name="message"
+                rows="3"
+                placeholder="Tell us what you're looking for"
+              ></textarea>
+            </div>
+            <div
+              id="form-status"
+              class="form-status"
+              role="status"
+              aria-live="polite"
+            ></div>
+            <button class="btn" type="submit">
+              <span>Request Appointment</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="px-8 md:px-16 pt-24 pb-10 border-t"
+      style="border-color: rgba(201, 169, 98, 0.15)"
+    >
+      <div class="max-w-6xl mx-auto grid md:grid-cols-5 gap-10 mb-16">
+        <p class="serif text-2xl md:col-span-1">CHRONOS<br />ATELIER</p>
+
+        <nav aria-label="Collections">
+          <h2 class="label mb-4">Collections</h2>
+          <ul class="footer-nav">
+            <li><a href="#collection">Heritage</a></li>
+            <li><a href="#collection">Sport</a></li>
+            <li><a href="#collection">Dress</a></li>
+            <li><a href="#collection">Limited Editions</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Company">
+          <h2 class="label mb-4">Company</h2>
+          <ul class="footer-nav">
+            <li><a href="#craftsmanship">About</a></li>
+            <li><a href="#craftsmanship">Craftsmanship</a></li>
+            <li><a href="#contact">Boutiques</a></li>
+            <li><a href="#contact">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Support">
+          <h2 class="label mb-4">Support</h2>
+          <ul class="footer-nav">
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Warranty</a></li>
+            <li><a href="#contact">Service</a></li>
+            <li><a href="#contact">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="label mb-4">Newsletter</h2>
+          <form id="newsletter-form">
+            <label class="sr-only" for="newsletter-email">Email</label>
+            <input
+              id="newsletter-email"
+              name="email"
+              type="email"
+              placeholder="Email"
+              class="mb-4"
+              required
+            />
+            <button
+              type="submit"
+              class="underline-link"
+              style="
+                background: none;
+                border: none;
+                padding: 0;
+                cursor: pointer;
+              "
+            >
+              Subscribe
+            </button>
+            <p
+              id="newsletter-status"
+              class="sr-only"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between text-xs pt-8 border-t"
+        style="border-color: rgba(201, 169, 98, 0.1); color: var(--stone)"
+      >
+        <p>© 2026 Chronos Atelier. All rights reserved.</p>
+        <p>
+          <a href="#" style="color: var(--stone)">Privacy Policy</a> ·
+          <a href="#" style="color: var(--stone)">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      /* 09.0 FORMS */
+      (function () {
+        const form = document.getElementById("contact-form");
+        const status = document.getElementById("form-status");
+        if (form && status) {
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            try {
+              if (!form.checkValidity()) {
+                status.textContent =
+                  "Please fill in your name, email, and preferred model.";
+                status.dataset.state = "error";
+                status.classList.add("is-visible");
+                return;
+              }
+              const btn = form.querySelector('button[type="submit"]');
+              const btnLabel = btn.querySelector("span");
+              const originalLabel = btnLabel.textContent;
+              btn.disabled = true;
+              btnLabel.textContent = "Sending…";
+              status.classList.remove("is-visible");
+              setTimeout(() => {
+                status.textContent =
+                  "Thank you — we'll be in touch within one business day to confirm your appointment.";
+                status.dataset.state = "success";
+                status.classList.add("is-visible");
+                btn.disabled = false;
+                btnLabel.textContent = originalLabel;
+                form.reset();
+              }, 900);
+            } catch (err) {
+              status.textContent =
+                "Something went wrong. Please try again in a moment.";
+              status.dataset.state = "error";
+              status.classList.add("is-visible");
+            }
+          });
+        }
+
+        const newsletterForm = document.getElementById("newsletter-form");
+        const newsletterStatus = document.getElementById("newsletter-status");
+        if (newsletterForm && newsletterStatus) {
+          newsletterForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            try {
+              const input = newsletterForm.querySelector('input[type="email"]');
+              if (!input.checkValidity()) {
+                newsletterStatus.textContent =
+                  "Please enter a valid email address.";
+                newsletterStatus.classList.remove("sr-only");
+                return;
+              }
+              newsletterStatus.textContent =
+                "Subscribed — welcome to Chronos Atelier.";
+              newsletterStatus.classList.remove("sr-only");
+              newsletterForm.reset();
+            } catch (err) {
+              newsletterStatus.textContent =
+                "Something went wrong. Please try again.";
+              newsletterStatus.classList.remove("sr-only");
+            }
+          });
+        }
+      })();
+
+      /* 09.1 NAVIGATION BEHAVIOUR */
+      (function () {
+        const nav = document.getElementById("site-nav");
+        const burger = document.getElementById("nav-burger");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const navLinks = document.querySelectorAll(
+          ".nav-pill-link, .mobile-menu-links a",
+        );
+        const sections = [
+          "hero",
+          "collection",
+          "craftsmanship",
+          "signature",
+          "contact",
+        ]
+          .map((id) => document.getElementById(id))
+          .filter(Boolean);
+
+        const setActive = (id) => {
+          navLinks.forEach((l) => {
+            const active = l.dataset.section === id;
+            l.classList.toggle("is-active", active);
+            if (active) {
+              l.setAttribute("aria-current", "page");
+            } else {
+              l.removeAttribute("aria-current");
+            }
+          });
+        };
+
+        if ("IntersectionObserver" in window && sections.length) {
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) setActive(entry.target.id);
+              });
+            },
+            { rootMargin: "-45% 0px -50% 0px", threshold: 0 },
+          );
+          sections.forEach((s) => io.observe(s));
+        }
+
+        window.addEventListener(
+          "scroll",
+          () => {
+            nav.classList.toggle("is-scrolled", window.scrollY > 40);
+          },
+          { passive: true },
+        );
+
+        let menuOpen = false;
+        let lastFocused = null;
+
+        function getFocusable() {
+          return Array.from(
+            mobileMenu.querySelectorAll("a[href], button:not([disabled])"),
+          );
+        }
+
+        function trapFocus(e) {
+          if (e.key !== "Tab") return;
+          const focusable = getFocusable();
+          if (!focusable.length) return;
+          const first = focusable[0];
+          const last = focusable[focusable.length - 1];
+          if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+          } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+          }
+        }
+
+        function closeMobileMenu() {
+          if (!menuOpen) return;
+          menuOpen = false;
+          mobileMenu.classList.remove("is-open");
+          mobileMenu.setAttribute("aria-hidden", "true");
+          burger.setAttribute("aria-expanded", "false");
+          burger.setAttribute("aria-label", "Open menu");
+          document.body.style.overflow = "";
+          document.documentElement.style.overflow = "";
+          mobileMenu.removeEventListener("keydown", trapFocus);
+          if (window.lenis && typeof window.lenis.start === "function")
+            window.lenis.start();
+          if (lastFocused) lastFocused.focus();
+        }
+        function openMobileMenu() {
+          if (menuOpen) return;
+          menuOpen = true;
+          lastFocused = document.activeElement;
+          mobileMenu.classList.add("is-open");
+          mobileMenu.setAttribute("aria-hidden", "false");
+          burger.setAttribute("aria-expanded", "true");
+          burger.setAttribute("aria-label", "Close menu");
+          document.body.style.overflow = "hidden";
+          document.documentElement.style.overflow = "hidden";
+          mobileMenu.addEventListener("keydown", trapFocus);
+          if (window.lenis && typeof window.lenis.stop === "function")
+            window.lenis.stop();
+          const focusable = getFocusable();
+          if (focusable.length) focusable[0].focus();
+        }
+        if (burger) {
+          burger.addEventListener("click", () => {
+            menuOpen ? closeMobileMenu() : openMobileMenu();
+          });
+        }
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeMobileMenu();
+        });
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            const target = document.querySelector(link.getAttribute("href"));
+            if (!target) return;
+            e.preventDefault();
+            closeMobileMenu();
+            if (window.lenis && typeof window.lenis.scrollTo === "function") {
+              window.lenis.scrollTo(target, { offset: -80 });
+            } else {
+              const y =
+                target.getBoundingClientRect().top + window.scrollY - 80;
+              window.scrollTo({ top: y, behavior: "auto" });
+            }
+          });
+        });
+      })();
+
+      /* 09.2 MAIN ANIMATION BOOT */
+      (function boot() {
+        if (
+          !window.gsap ||
+          !window.ScrollTrigger ||
+          typeof window.Lenis !== "function"
+        ) {
+          console.warn(
+            "Animation libraries unavailable — falling back to static layout.",
+          );
+          return;
+        }
+
+        try {
+          gsap.registerPlugin(ScrollTrigger);
+          const REDUCED_MOTION = window.matchMedia(
+            "(prefers-reduced-motion: reduce)",
+          ).matches;
+
+          const lenis = new Lenis({ lerp: 0.1, smoothWheel: true });
+          window.lenis = lenis;
+          lenis.on("scroll", ScrollTrigger.update);
+          gsap.ticker.add((time) => lenis.raf(time * 1000));
+          gsap.ticker.lagSmoothing(0);
+
+          (async () => {
+            const btn = document.getElementById("download-btn");
+            if (!window.claude || typeof window.claude.use !== "function")
+              return;
+            const downloads = await window.claude.use("downloads");
+            if (!downloads) return;
+            btn.classList.remove("hidden");
+            btn.addEventListener("click", async () => {
+              const html =
+                "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+              try {
+                await downloads.save({
+                  filename: "chronos-atelier.html",
+                  data: html,
+                });
+              } catch (e) {
+                /* viewer declined */
+              }
+            });
+          })();
+
+          const watches = [
+            {
+              name: "Heritage Automatic",
+              size: "42 mm",
+              material: "Sapphire Crystal",
+              reserve: "72h Reserve",
+              price: "$12,500",
+              badge: "New",
+              img: "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?q=80&w=900&auto=format&fit=crop",
+            },
+            {
+              name: "Signature Chronograph",
+              size: "40 mm",
+              material: "Titanium",
+              reserve: "60h Reserve",
+              price: "$15,800",
+              badge: "",
+              img: "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?q=80&w=900&auto=format&fit=crop",
+            },
+            {
+              name: "Atelier Perpetual",
+              size: "41 mm",
+              material: "Rose Gold",
+              reserve: "96h Reserve",
+              price: "$28,400",
+              badge: "Limited",
+              img: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=900&auto=format&fit=crop",
+            },
+            {
+              name: "Obsidian Diver",
+              size: "44 mm",
+              material: "Ceramic",
+              reserve: "80h Reserve",
+              price: "$18,200",
+              badge: "",
+              img: "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?q=80&w=900&auto=format&fit=crop",
+            },
+            {
+              name: "Champagne Dress",
+              size: "38 mm",
+              material: "Platinum",
+              reserve: "65h Reserve",
+              price: "$34,900",
+              badge: "",
+              img: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=900&auto=format&fit=crop",
+            },
+          ];
+
+          const track = document.querySelector(".hcard-track");
+          track.innerHTML = watches
+            .map(
+              (w) => `
+      <article class="watch-card flex-none w-[280px] md:w-[320px]">
+        <div class="watch-card__media">
+          <img src="${w.img}" alt="${w.name} — ${w.material} watch" loading="lazy" width="640" height="800">
+          ${w.badge ? `<span class="watch-card__badge">${w.badge}</span>` : ""}
+        </div>
+        <div class="watch-card__body">
+          <h3 class="watch-card__name">${w.name}</h3>
+          <p class="watch-card__specs">${w.size} · ${w.material}<br>${w.reserve}</p>
+          <p class="watch-card__price">${w.price}</p>
+        </div>
+        <div class="watch-card__footer">
+          <button type="button" class="watch-card__cta" data-product="${w.name}" aria-label="Add ${w.name} to cart">
+            <span>Add to Cart</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M6 8h12l-1 12H7L6 8Z" stroke-linejoin="round"/>
+              <path d="M9 8V6a3 3 0 0 1 6 0v2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </article>`,
+            )
+            .join("");
+
+          (function initCartButtons() {
+            const badges = document.querySelectorAll(".cart-badge");
+            let count = 0;
+
+            const updateBadges = () => {
+              badges.forEach((b) => {
+                b.textContent = count;
+                b.setAttribute("data-count", String(count));
+              });
+              const cartLink = document.getElementById("cart-link");
+              if (cartLink)
+                cartLink.setAttribute(
+                  "aria-label",
+                  `Cart, ${count} item${count === 1 ? "" : "s"}`,
+                );
+            };
+
+            document.querySelectorAll(".watch-card__cta").forEach((btn) => {
+              btn.addEventListener("click", () => {
+                count += 1;
+                updateBadges();
+                const original = btn.querySelector("span").textContent;
+                btn.querySelector("span").textContent = "Added ✓";
+                btn.style.color = "var(--obsidian)";
+                btn.style.background = "var(--gold)";
+                setTimeout(() => {
+                  btn.querySelector("span").textContent = original;
+                  btn.style.color = "";
+                  btn.style.background = "";
+                }, 900);
+              });
+            });
+          })();
+
+          if (REDUCED_MOTION) {
+            gsap.set(".opacity-0", { opacity: 1, y: 0, x: 0 });
+            gsap.set(".craft-img, .craft-text > *", {
+              opacity: 1,
+              x: 0,
+              scale: 1,
+              clipPath: "inset(0 0% 0 0%)",
+            });
+            gsap.set("#hero-img", { scale: 1 });
+            gsap.set(".stat-card__rule", { scaleX: 1 });
+            gsap.set(".stat-card", { opacity: 1, x: 0, y: 0, scale: 1 });
+            gsap.set(".sig-img", {
+              opacity: 1,
+              xPercent: 0,
+              yPercent: 0,
+              scale: 1,
+            });
+            gsap.set(".sig-text", {
+              height: "auto",
+              maskImage: "none",
+              WebkitMaskImage: "none",
+            });
+            gsap.set(".sig-roll", { y: 0 });
+            document.querySelectorAll(".stat").forEach((s) => {
+              s.textContent = s.dataset.count;
+            });
+            document.documentElement.classList.add("gsap-ready");
+            ScrollTrigger.refresh();
+            return;
+          }
+
+          const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+          tl.to("#hero-img", { scale: 1, duration: 2, ease: "power2.out" }, 0)
+            .to(".hero-label", { opacity: 1, y: 0, duration: 0.8 }, 0.3)
+            .fromTo(
+              ".hero-word",
+              { opacity: 0, y: 20 },
+              { opacity: 1, y: 0, duration: 0.7, stagger: 0.15 },
+              0.5,
+            )
+            .to(".hero-sub", { opacity: 1, y: 0, duration: 0.8 }, 1)
+            .to(".hero-cta", { opacity: 1, y: 0, duration: 0.8 }, 1.3);
+
+          gsap.fromTo(
+            ".scroll-dot",
+            { y: -16 },
+            {
+              y: 16,
+              duration: 1.2,
+              repeat: -1,
+              yoyo: true,
+              ease: "sine.inOut",
+            },
+          );
+
+          gsap.utils.toArray(".phi-line").forEach((el) => {
+            gsap.fromTo(
+              el,
+              { opacity: 0, y: 30 },
+              {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: "power2.out",
+                scrollTrigger: { trigger: el, start: "top 85%" },
+              },
+            );
+          });
+
+          gsap.fromTo(
+            "#collection .label",
+            { x: 0 },
+            {
+              x: 20,
+              ease: "none",
+              scrollTrigger: {
+                trigger: "#collection",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true,
+              },
+            },
+          );
+
+          const hwrap = document.querySelector(".hcard-wrap");
+          const hdistance = () =>
+            Math.max(0, track.scrollWidth - hwrap.clientWidth);
+
+          const cards = gsap.utils.toArray(".watch-card");
+          let currentFocus = -1;
+          const setFocus = (idx) => {
+            if (idx === currentFocus) return;
+            currentFocus = idx;
+            cards.forEach((c, i) =>
+              c.classList.toggle("is-focused", i === idx),
+            );
+          };
+          const updateFocus = () => {
+            if (!cards.length) return;
+            const wrapRect = hwrap.getBoundingClientRect();
+            const wrapCenter = wrapRect.left + wrapRect.width / 2;
+            let bestIdx = 0;
+            let bestDist = Infinity;
+            cards.forEach((card, i) => {
+              const r = card.getBoundingClientRect();
+              const c = r.left + r.width / 2;
+              const d = Math.abs(c - wrapCenter);
+              if (d < bestDist) {
+                bestDist = d;
+                bestIdx = i;
+              }
+            });
+            setFocus(bestIdx);
+          };
+
+          gsap.to(track, {
+            x: () => -hdistance(),
+            ease: "none",
+            onUpdate: updateFocus,
+            scrollTrigger: {
+              trigger: "#collection",
+              start: "top top",
+              end: () => "+=" + hdistance(),
+              scrub: 1,
+              pin: true,
+              pinSpacing: true,
+              anticipatePin: 1,
+              invalidateOnRefresh: true,
+              refreshPriority: 20,
+              onRefresh: () => {
+                requestAnimationFrame(updateFocus);
+              },
+            },
+          });
+
+          requestAnimationFrame(updateFocus);
+
+          gsap.utils.toArray(".watch-card").forEach((card, i) => {
+            gsap.fromTo(
+              card,
+              { scale: 0.94, opacity: 0.6 },
+              {
+                scale: 1,
+                opacity: 1,
+                duration: 0.6,
+                ease: "power2.out",
+                scrollTrigger: {
+                  trigger: "#collection",
+                  start: () => `top+=${i * (hdistance() / watches.length)} top`,
+                  end: () => `+=${hdistance() / watches.length}`,
+                  scrub: true,
+                },
+              },
+            );
+          });
+
+          /* 09.2i CRAFTSMANSHIP */
+          const craftBlocks = document.querySelectorAll(
+            "#craftsmanship > .craft-block",
+          );
+
+          craftBlocks.forEach((block) => {
+            const fromRight = block.dataset.direction === "right";
+            const offset = fromRight ? 220 : -220;
+            const img = block.querySelector(".craft-img");
+            const textKids = block.querySelectorAll(".craft-text > *");
+
+            const tl = gsap.timeline({ paused: true });
+
+            if (img) {
+              tl.fromTo(
+                img,
+                {
+                  opacity: 0,
+                  x: offset,
+                  scale: 1.06,
+                  clipPath: fromRight
+                    ? "inset(0 0 0 100%)"
+                    : "inset(0 100% 0 0)",
+                },
+                {
+                  opacity: 1,
+                  x: 0,
+                  scale: 1,
+                  clipPath: "inset(0 0% 0 0%)",
+                  duration: 1,
+                  ease: "power2.out",
+                },
+                0,
+              );
+            }
+
+            if (textKids.length) {
+              tl.fromTo(
+                textKids,
+                { opacity: 0, x: offset * 0.7 },
+                {
+                  opacity: 1,
+                  x: 0,
+                  duration: 0.85,
+                  ease: "power2.out",
+                  stagger: 0.07,
+                },
+                0.1,
+              );
+            }
+
+            ScrollTrigger.create({
+              trigger: block,
+              start: "top bottom",
+              end: "top top",
+              scrub: true,
+              onUpdate: (self) => {
+                tl.progress(self.progress * 0.35);
+              },
+            });
+
+            ScrollTrigger.create({
+              trigger: block,
+              start: "top top",
+              end: "+=60%",
+              scrub: 1,
+              pin: true,
+              pinSpacing: true,
+              anticipatePin: 1,
+              invalidateOnRefresh: true,
+              refreshPriority: 15,
+              onUpdate: (self) => {
+                tl.progress(0.35 + self.progress * 0.65);
+              },
+            });
+          });
+
+          /* 09.2l STATS */
+          (function initStats() {
+            const stage = document.querySelector(".stats-stage");
+            if (!stage) return;
+
+            const cards = gsap.utils.toArray(".stat-card");
+            if (!cards.length) return;
+
+            const stageRect = () => stage.getBoundingClientRect();
+
+            const computeCentreOffset = (card) => {
+              const sRect = stageRect();
+              const cRect = card.getBoundingClientRect();
+              const dx =
+                sRect.left + sRect.width / 2 - (cRect.left + cRect.width / 2);
+              const dy =
+                sRect.top + sRect.height / 2 - (cRect.top + cRect.height / 2);
+              return { dx, dy };
+            };
+
+            let centreOffsets = cards.map(() => ({ dx: 0, dy: 0 }));
+
+            const applyInitialState = () => {
+              centreOffsets = cards.map((card) => computeCentreOffset(card));
+              cards.forEach((card, i) => {
+                const { dx, dy } = centreOffsets[i];
+                gsap.set(card, {
+                  x: dx,
+                  y: dy,
+                  scale: 0.6,
+                  opacity: 0,
+                  transformOrigin: "center center",
+                });
+              });
+            };
+
+            applyInitialState();
+
+            const tl = gsap.timeline({ paused: true });
+
+            const order = [0, 3, 1, 2];
+            order.forEach((cardIdx, step) => {
+              const card = cards[cardIdx];
+              tl.to(
+                card,
+                {
+                  x: 0,
+                  y: 0,
+                  scale: 1,
+                  opacity: 1,
+                  duration: 1,
+                  ease: "power3.out",
+                },
+                step * 0.28,
+              );
+            });
+
+            gsap.utils.toArray(".stat-card__rule").forEach((rule, i) => {
+              tl.fromTo(
+                rule,
+                { scaleX: 0 },
+                { scaleX: 1, duration: 0.4, ease: "power2.out" },
+                0.6 + i * 0.2,
+              );
+            });
+
+            ScrollTrigger.create({
+              trigger: "#stats",
+              start: "top bottom",
+              end: "top top",
+              scrub: true,
+              onUpdate: (self) => {
+                tl.progress(self.progress * 0.4);
+              },
+            });
+
+            ScrollTrigger.create({
+              trigger: "#stats",
+              start: "top top",
+              end: "+=90%",
+              scrub: 1,
+              pin: ".stats-stage",
+              pinSpacing: true,
+              anticipatePin: 1,
+              invalidateOnRefresh: true,
+              refreshPriority: 10,
+              onRefresh: () => {
+                applyInitialState();
+              },
+              onUpdate: (self) => {
+                tl.progress(0.4 + self.progress * 0.6);
+              },
+            });
+
+            let counted = false;
+            ScrollTrigger.create({
+              trigger: "#stats",
+              start: "top top",
+              once: true,
+              onEnter: () => {
+                if (counted) return;
+                counted = true;
+                document.querySelectorAll(".stat-card .stat").forEach((el) => {
+                  const target = +el.dataset.count;
+                  const obj = { v: 0 };
+                  gsap.to(obj, {
+                    v: target,
+                    duration: 1.8,
+                    delay: 0.35,
+                    ease: "power1.out",
+                    onUpdate: () => {
+                      el.textContent = Math.round(obj.v);
+                    },
+                  });
+                });
+              },
+            });
+
+            window.__recomputeStatsOffsets = () => {
+              centreOffsets = cards.map((card) => computeCentreOffset(card));
+              if (tl.progress() <= 0.001) applyInitialState();
+            };
+          })();
+
+          /* 09.2k SIGNATURE */
+          (function initSignature() {
+            const stage = document.querySelector(".sig-stage");
+            if (!stage) return;
+
+            const sigImg = stage.querySelector(".sig-img");
+            const roll = stage.querySelector(".sig-roll");
+            const frame = stage.querySelector(".sig-text");
+            const steps = stage.querySelectorAll(".sig-step");
+            const ticks = stage.querySelectorAll(".sig-progress__tick");
+            if (!sigImg || !roll || !frame || steps.length < 3) return;
+
+            const frameH = frame.clientHeight;
+            const stepH = steps[0].offsetHeight || frameH;
+            const stepAdvance = stepH;
+            const startY = 0;
+            const endY = -stepAdvance * (steps.length - 1);
+
+            gsap.set(roll, { y: startY });
+
+            const tl = gsap.timeline({ paused: true });
+
+            gsap.set(sigImg, {
+              xPercent: -40,
+              yPercent: 40,
+              scale: 1.08,
+              opacity: 0,
+              transformOrigin: "bottom left",
+            });
+
+            tl.to(
+              sigImg,
+              {
+                xPercent: 0,
+                yPercent: 0,
+                scale: 1,
+                opacity: 1,
+                duration: 1.2,
+                ease: "power3.out",
+              },
+              0,
+            );
+
+            tl.to({}, { duration: 0.3 }, 1.2);
+
+            tl.to(
+              roll,
+              {
+                y: endY,
+                duration: 4,
+                ease: "none",
+              },
+              1.5,
+            );
+
+            tl.to({}, { duration: 1.5 }, 5.5);
+
+            ScrollTrigger.create({
+              trigger: "#signature",
+              start: "top bottom",
+              end: "top top",
+              scrub: true,
+              onUpdate: (self) => {
+                tl.progress(self.progress * 0.12);
+              },
+            });
+
+            ScrollTrigger.create({
+              trigger: "#signature",
+              start: "top top",
+              end: "+=280%",
+              scrub: 1,
+              pin: ".sig-stage",
+              pinSpacing: true,
+              anticipatePin: 1,
+              invalidateOnRefresh: true,
+              refreshPriority: 5,
+              onUpdate: (self) => {
+                tl.progress(0.12 + self.progress * 0.88);
+              },
+              onRefresh: () => {
+                const newFrameH = frame.clientHeight;
+                const newStepH = steps[0].offsetHeight || newFrameH;
+                const newEndY = -newStepH * (steps.length - 1);
+                gsap.set(roll, { y: startY });
+                tl.invalidate();
+                tl.getChildren()[1].vars.y = newEndY;
+              },
+            });
+
+            const setActiveTick = (idx) => {
+              ticks.forEach((t, i) =>
+                t.classList.toggle("is-active", i === idx),
+              );
+            };
+
+            ScrollTrigger.create({
+              trigger: "#signature",
+              start: "top top",
+              end: "+=280%",
+              onUpdate: (self) => {
+                const p = 0.12 + self.progress * 0.88;
+                let idx = -1;
+                if (p >= 0.2 && p < 0.55) idx = 0;
+                else if (p >= 0.55 && p < 0.8) idx = 1;
+                else if (p >= 0.8) idx = 2;
+                setActiveTick(idx);
+              },
+            });
+          })();
+
+          gsap.fromTo(
+            ".quote-mark",
+            { opacity: 0 },
+            {
+              opacity: 1,
+              duration: 0.6,
+              scrollTrigger: { trigger: ".quote-mark", start: "top 85%" },
+            },
+          );
+          gsap.fromTo(
+            ".quote-text",
+            { opacity: 0, y: 20 },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              scrollTrigger: { trigger: ".quote-text", start: "top 85%" },
+            },
+          );
+          gsap.fromTo(
+            ".quote-attr",
+            { opacity: 0 },
+            {
+              opacity: 1,
+              duration: 0.8,
+              delay: 0.3,
+              scrollTrigger: { trigger: ".quote-text", start: "top 85%" },
+            },
+          );
+
+          gsap.utils.toArray(".cta-field").forEach((f, i) => {
+            gsap.fromTo(
+              f,
+              { opacity: 0, y: 16 },
+              {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                delay: i * 0.08,
+                scrollTrigger: { trigger: f, start: "top 95%" },
+              },
+            );
+          });
+
+          document.documentElement.classList.add("gsap-ready");
+
+          if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(() => {
+              if (typeof window.__recomputeStatsOffsets === "function") {
+                window.__recomputeStatsOffsets();
+              }
+              ScrollTrigger.refresh();
+            });
+          }
+          window.addEventListener("load", () => {
+            if (typeof window.__recomputeStatsOffsets === "function") {
+              window.__recomputeStatsOffsets();
+            }
+            ScrollTrigger.refresh();
+          });
+        } catch (err) {
+          console.error(
+            "Animation init failed, falling back to static layout:",
+            err,
+          );
+        }
+      })();
+    </script>
+  </body>
+</html>
